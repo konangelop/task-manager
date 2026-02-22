@@ -2,7 +2,9 @@
   "permissions": {
     "allow": [
       "Bash(cd:*)",
-      "Skill(commit-commands:commit)"
+      "Skill(commit-commands:commit)",
+      "mcp__plugin_github_github__get_me",
+      "mcp__plugin_github_github__create_repository"
     ]
   }
 }
