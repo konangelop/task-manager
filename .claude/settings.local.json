@@ -4,7 +4,8 @@
       "Bash(cd:*)",
       "Skill(commit-commands:commit)",
       "mcp__plugin_github_github__get_me",
-      "mcp__plugin_github_github__create_repository"
+      "mcp__plugin_github_github__create_repository",
+      "Skill(commit-commands:commit-push-pr)"
     ]
   }
 }
