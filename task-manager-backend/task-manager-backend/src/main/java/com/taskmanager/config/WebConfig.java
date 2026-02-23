@@ -30,12 +30,7 @@ public class WebConfig {
         CorsConfiguration config = new CorsConfiguration();
         
         // Allow requests from React development servers
-        config.setAllowedOrigins(Arrays.asList(
-            "http://localhost:5173",  // Vite default port
-            "http://localhost:3000",  // CRA default port
-            "http://127.0.0.1:5173",
-            "http://127.0.0.1:3000"
-        ));
+        config.setAllowedOriginPatterns(Arrays.asList("http://localhost:*", "http://127.0.0.1:*"));
         
         // Allow common HTTP methods
         config.setAllowedMethods(Arrays.asList(
