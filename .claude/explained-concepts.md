@@ -37,6 +37,13 @@ Do NOT re-explain these unless the user explicitly asks.
 
 ---
 
+## Task 5 — Event handling, immutable state updates, lifting state up
+- Event handling — handlers are functions passed as JSX props (`onChange`, `onClick`); typed as `React.ChangeEvent<HTMLInputElement>` for checkbox inputs
+- Immutable state updates — never mutate state directly; use `map` to produce a new array where the changed item is replaced with a new object; React won't re-render if the reference doesn't change
+- Lifting state up — define state and its handler in the parent (where state lives), pass the handler down to the child as a prop; child calls it, parent updates state
+
+---
+
 ## Task 4 — Component composition, props, conditional rendering
 - Props — data passed from parent to child via attributes; strictly one-way (parent owns, child reads); typed with a TypeScript interface for compile-time safety
 - Component composition — building UI from small focused components nested inside each other; like method extraction applied to UI

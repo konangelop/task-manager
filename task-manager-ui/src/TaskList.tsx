@@ -13,10 +13,18 @@ export function TaskList() {
 
         loadTasks();
     }, []);
+
+    async function handleToggle(id: number) {
+        const response = await axios.patch<Task>(`/api/tasks/${id}/toggle`)
+        setTasks(tasks.map(task =>
+            task.id === id ? response.data : task
+        ))
+    }
+
     return (
         <ul>
             {tasks.map(task => (
-                <TaskItem key={task.id} task={task}/>
+                <TaskItem key={task.id} task={task} onToggle={handleToggle}/>
             ))}
         </ul>
     );
