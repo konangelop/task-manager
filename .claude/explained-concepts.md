@@ -33,3 +33,4 @@ Do NOT re-explain these unless the user explicitly asks.
 - `useEffect` — where side effects live (data fetching, timers, subscriptions); runs after render; dependency array `[]` means run once on mount (like @PostConstruct)
 - async/await in useEffect — `useEffect`'s function cannot itself be async; define an async function inside the effect and call it immediately
 - `fetch` — browser built-in for HTTP requests; returns a Promise; await the response, then await `.json()` to parse the body
+- Axios — third-party HTTP client (`npm install axios`); auto-parses JSON (response on `.data`); throws on non-2xx responses (unlike fetch which only throws on network failure); supports interceptors and TypeScript generics for typed responses

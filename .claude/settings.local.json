@@ -5,7 +5,13 @@
       "Skill(commit-commands:commit)",
       "mcp__plugin_github_github__get_me",
       "mcp__plugin_github_github__create_repository",
-      "Skill(commit-commands:commit-push-pr)"
+      "Skill(commit-commands:commit-push-pr)",
+      "Bash(tail:*)",
+      "Bash(mvn --version 2>&1 && java --version 2>&1)",
+      "Bash(cd /c/Users/ntuae/git/task-manager/task-manager-backend/task-manager-backend && mvn wrapper:wrapper 2>&1)",
+      "Bash(sleep 25:*)",
+      "Bash(grep:*)",
+      "WebSearch"
     ]
   }
 }
