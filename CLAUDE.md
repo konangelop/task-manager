@@ -82,10 +82,10 @@ All classes use Lombok: `@Data`, `@RequiredArgsConstructor` for constructor inje
 - Check the `.claude/explained-concepts.md` file at the start of each session to know where to resume
 
 | # | Status | Task | Concept(s) |
-|---|--------|------|------------|
+|---|-------|------|------------|
 | 1 | ✅ | Define `src/types.ts` — Task, Category interfaces; Priority enum | TypeScript interfaces, enums, optional fields `?`, type aliases |
 | 2 | ✅ | Bare-bones `App` component — hardcoded heading, no data | React functional components, JSX syntax |
-| 3 | ⬜ | `TaskList` — fetch `/api/tasks`, render list | `useEffect` (data fetching), `useState` (storing data), async/await |
+| 3 | ✅ | `TaskList` — fetch `/api/tasks`, render list | `useEffect` (data fetching), `useState` (storing data), async/await |
 | 4 | ⬜ | `TaskItem` — display a single task inside TaskList | Component composition, props with TypeScript types, conditional rendering |
 | 5 | ⬜ | Toggle completion — checkbox on TaskItem | Event handling (`React.ChangeEvent`), immutable state updates |
 | 6 | ⬜ | `TaskForm` — create a new task | Controlled components, `useState` for form inputs, `onSubmit` / `preventDefault` |

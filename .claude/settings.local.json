@@ -11,7 +11,8 @@
       "Bash(cd /c/Users/ntuae/git/task-manager/task-manager-backend/task-manager-backend && mvn wrapper:wrapper 2>&1)",
       "Bash(sleep 25:*)",
       "Bash(grep:*)",
-      "WebSearch"
+      "WebSearch",
+      "Bash(git:*)"
     ]
   }
 }
